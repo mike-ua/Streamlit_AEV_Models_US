@@ -1,1 +1,3 @@
-libraries necessary: streamlit, pandas, plotly.express
+streamlit
+pandas
+plotly_express
