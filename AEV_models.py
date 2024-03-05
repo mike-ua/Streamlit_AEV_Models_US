@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
+import plotly as px
 
 st.subheader('Alternative Energy Vehicles')
 st.write('Light Duty Vehicles, though December 25, 2023')
