@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-st.subheader('Alternative Energy Vehicles')
+st.subheader('Alternative Energy Vehicles (U.S.)')
 st.write('Light Duty Vehicles, though December 25, 2023')
 
 col1, col2 = st.columns(2)
