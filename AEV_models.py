@@ -3,13 +3,13 @@ import pandas as pd
 import plotly.express as px
 
 st.subheader('Alternative Energy Vehicles (U.S.)')
-st.write('Light Duty Vehicles, though December 25, 2023')
+st.write('Light Duty Vehicles, though July 17, 2023')
 
 col1, col2 = st.columns(2)
 
 with col1:
     # Read and filter the dataframe
-    df = pd.read_csv('https://github.com/mike-ua/Streamlit-Data/blob/main/light-duty-vehicles-2023-12-25.csv?raw=true')
+    df = pd.read_csv('https://github.com/mike-ua/Streamlit-Data/blob/main/light-duty-vehicles-2023-07-17.csv?raw=true')
     df = df[df['Fuel_Code'].isin(['ELEC', 'HYBR', 'PHEV'])]
 
     # Convert 'Model_Year' to string for display
