@@ -5,9 +5,9 @@ import plotly.express as px
 st.subheader('Alternative Energy Vehicles (U.S.)')
 st.write('Light Duty Vehicles, though July 17, 2024')
 
-col1, col2 = st.columns(2)
+#col1, col2 = st.columns(2)
 
-with col1:
+#with col1:
     # Read and filter the dataframe
     df = pd.read_csv('https://github.com/mike-ua/Streamlit-Data/blob/main/light-duty-vehicles-2024-07-17.csv?raw=true')
     df = df[df['Fuel_Code'].isin(['ELEC', 'HYBR', 'PHEV'])]
@@ -22,7 +22,7 @@ with col1:
     # Display the DataFrame with formatted 'Model_Year' column
     st.dataframe(reshaped_df)
 
-with col2:
+#with col2:
     # Convert 'Model_Year' to numeric, round, and then 'Int64'
     df['Model_Year'] = pd.to_numeric(df['Model_Year'], errors='coerce').astype('Int64')
 
