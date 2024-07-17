@@ -9,7 +9,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     # Read and filter the dataframe
-    df = pd.read_csv('https://github.com/mike-ua/Streamlit-Data/blob/main/light-duty-vehicles-2023-07-17.csv?raw=true')
+    df = pd.read_csv('https://github.com/mike-ua/Streamlit-Data/blob/main/light-duty-vehicles-2024-07-17.csv?raw=true')
     df = df[df['Fuel_Code'].isin(['ELEC', 'HYBR', 'PHEV'])]
 
     # Convert 'Model_Year' to string for display
