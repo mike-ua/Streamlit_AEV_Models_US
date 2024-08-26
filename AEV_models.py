@@ -30,7 +30,7 @@ df['Model_Year'] = pd.to_numeric(df['Model_Year'], errors='coerce').astype('Int6
 line_chart_df = df.groupby(['Model_Year', 'Fuel_Code']).size().unstack(level='Fuel_Code').fillna(0)
 
 # Create a Plotly line chart
-fig = px.line(line_chart_df, x=line_chart_df.index, y=line_chart_df.columns, title='Total Models of Electric Cars')
+fig = px.line(line_chart_df, x=line_chart_df.index, y=line_chart_df.columns, title='Total MODELS of Electric Cars')
 
 # Display the Plotly figure
 st.plotly_chart(fig)
